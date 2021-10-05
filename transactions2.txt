@@ -1,0 +1,11 @@
+<T1 start>
+<T2 start>
+<ckpt {T1, T2}>
+<T1, B, 20, 23>
+<T2, C, 30, 25>
+<T2 commit>
+<T3 start>
+<T1, B, 20>
+<T1 abort>
+<T3, A, 10, 5>
+crash

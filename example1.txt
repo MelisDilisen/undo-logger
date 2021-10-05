@@ -1,0 +1,5 @@
+<T1 start>
+<T1, A, 20, 23>
+<T1, B, 30, 25>
+<CKPT {T1}>
+crash

@@ -1,0 +1,10 @@
+<T0 start>
+<T0, B, 300, 320>
+<T1 start>
+<ckpt {T0, T1}>
+<T1, C, 30, 32>
+<T2 start>
+<T2, A, 20, 25>
+<T0, B, 300>
+<T0 abort>
+crash
