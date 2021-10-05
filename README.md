@@ -20,13 +20,13 @@ Below, in the figure 1, is a use-case diagram for the functional requirements of
 
 Table 1 is an example table I created about how logging works throughout different types of storages.
 
-![Table 1: Logging](/readme_images/usecase.png)
+![Table 1: Logging](/readme_images/table.png)
 
 ### Log Records
 Log records used by undo logging approach are shown below;
-  1.	<START T> : Meaning that transaction T started.
-  2.	<COMMIT T> : Meaning that transaction T finished successfully, no further manipulation of DB element is left. The changes done by T can appear on the disk.
-  3.	<ABORT T> : Meaning that transaction could not successfully finish. So, any changes made on the disk should be reverted.
+  1.	START T : Meaning that transaction T started.
+  2.	COMMIT T : Meaning that transaction T finished successfully, no further manipulation of DB element is left. The changes done by T can appear on the disk.
+  3.	ABORT T : Meaning that transaction could not successfully finish. So, any changes made on the disk should be reverted.
   4.	<T,X,v> : meaning that transaction T made changes on DB element x, whose former value was v. This is an update record form, which occurs with WRITE action. However, these updates are to be seen only on memory not on disk.
 
 Below, in the figure 2, are the input, undo logging output, output of the implementation of the code.
